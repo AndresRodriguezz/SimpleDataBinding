@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userTest"
+            type="co.and.databinding.User"/>
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataBindingActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="@{userTest.nombre}"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="@{userTest.edad}"
+        android:hint="Edad"
+        android:layout_margin="10dp"
+        android:id="@+id/tvEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="@{userTest.email}"
+        android:hint="Email"
+        android:layout_margin="10dp"
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="@{userTest.altura}"
+        android:hint="Altura"
+        android:layout_margin="10dp"
+        android:id="@+id/tvAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="@{userTest.peso}"
+        android:hint="Peso"
+        android:layout_margin="10dp"
+        android:id="@+id/tvPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/btChangeActivityToNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Activity"/>
+
+</LinearLayout>
+
+</layout>
